@@ -1,0 +1,668 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overscroll-behavior: none;
+
+}
+
+:root {
+    --white:#f1f1f1;
+    --whitewhite:white;
+    --grey:#a9a9a9;
+    --black:black;
+    --lightgray:lightgray;
+    --orange:#f15830;
+    --blue:#007cc7;
+    --red:crimson;
+    --green:darkgreen;
+}
+
+body {
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.myheader {
+    color: var(--white);
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    max-width: 1200px;
+    width: 100%;
+    transition: all 1s;
+
+}
+
+.myheader.scrolled{
+    color: var(--black);
+    background-color: var(--white);
+    transition: all 1s;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    margin-left: 1rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 2rem;
+}
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav ul li a.scrolled {
+    color: var(--black)
+}
+
+.mobile {
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: var(--white);
+    display: none;
+}
+.mobile.scrolled{
+    color: var(--black);
+}
+
+#hero_banner {
+    height: 95vh;
+    background: url('img/logo3.jpeg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    color: var(--white);
+}
+
+.welcome{
+    font-size: 42px;
+    margin-bottom: 10rem;
+    letter-spacing: 0.2em;
+    font-family: Montserrat;
+
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 5rem 3rem 2rem 3rem;
+}
+
+h4 {
+    margin: 1rem 0;
+}
+
+img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.imgAction{
+    filter: sepia(90%);
+}
+.imgAction:hover{
+    filter: none;
+    transition: all 1s;
+    transform: scale(1.1, 1.1);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    max-width: 1200px;
+    background-color: var(--white);
+}
+
+.projectsCont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1.5rem;
+    
+}
+
+.box {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--black);
+    border-radius: 2px;
+    max-width: 20rem;
+    background-color: var(--lightgrey);
+    box-shadow: 5px 5px 5px;
+    margin: 1.5rem;
+    
+}
+
+.aboutCont{
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem;
+}
+
+#aboutCont{
+    background-color: var(--grey);
+    padding-bottom: 2rem;
+}
+
+#aboutText {
+    display: flex;
+    padding: 1rem;
+    width: 75vw;
+}
+
+#aboutPic {
+    display: flex;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 25vw;
+}
+
+.skillsCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1.5rem;
+}
+
+.skill{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--whitewhite);
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill:nth-child(2n){
+    background-color: var(--lightgray);
+}
+
+.labelskill{
+    margin: 0;
+}
+
+.skillsBar{
+    margin: 1rem;
+    height: 1.5rem;
+    background-color: transparent;
+}
+.skillsBar::-webkit-progress-value {
+    background-color: var(--black);
+}
+.skillsBar::-webkit-progress-bar {
+    background-color: var(--white);
+}
+
+.fa-html5{
+  color: var(--orange);
+  font-size: 100px;
+}
+
+.fa-css3-alt{
+  color: var(--blue);
+  font-size: 100px;
+}
+
+.fa-user-group{
+  font-size: 100px;
+  color: var(--green);
+}
+
+.fa-award{
+  color: var(--red);
+  font-size: 100px;
+}
+
+i{
+  filter: grayscale(100%);
+}
+
+i:hover{
+  filter: none;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--grey);
+}
+#contactCont{
+    height: fit-content;
+}
+label {
+    margin-right: 3rem;
+}
+input {
+    width: 25rem;
+    border-style: none;
+    border-radius: 2px;
+}
+
+#Message {
+    height: 3rem;
+}
+
+.insert {
+    display: flex;
+    margin: 2rem;
+   justify-content: space-between;
+}
+.submit {
+    display: flex;
+    justify-content: center;
+}
+button {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 2px;
+    border-style: none;
+    background-color: var(--white);
+    margin-bottom: 2rem;
+}
+
+button:hover{
+  filter: invert(100%);
+}
+
+footer{
+    text-align: center;
+}
+
+#toTop{
+    position: fixed;
+    bottom: 0;
+    right: 2rem;
+    display: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+}
+
+
+
+
+@media (max-width: 1020px) {
+
+.myheader {
+  padding: 0.5rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mobile{
+  display: block;
+  margin: 0;
+  width: 2rem;
+}
+
+nav ul{
+  display: none;
+}
+
+nav ul li {
+  display: flex;
+  justify-content: right;
+}
+
+nav ul li a {
+  color: var(--black);
+}
+
+nav ul.responsive{
+  display: block;
+  background-color: var(--white);
+  position: absolute;
+  left: 0;
+  top: 4rem;
+  width: 100%;
+}
+ul.responsive li {
+    display: block;
+    margin: 1rem;
+}
+
+h3 {
+  margin: 1rem;
+  text-align: center;   
+  }
+    
+.container {
+  padding-top: 4rem;
+}
+ 
+.aboutCont{
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+#aboutPic {
+    width: 75vw;
+}
+    
+.skillsCont{
+  flex-direction: column;
+  align-items: center;
+}
+   
+#skillsPic {
+    width: 75vw;
+  }
+
+  #contact{
+    padding-top: 2rem;
+}
+
+    label {
+        margin: 1rem;
+    }
+    input {
+        width: 10rem;
+        height: 2rem;
+    }
+    
+    .insert {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0rem;
+    }
+    button {
+        margin: 2rem;
+    
+    }
+    #toTop{
+      bottom: 0;
+      right: 0;
+  }
+}
+
+/* @media (max-width: 1100px) {
+    header{
+        padding: 0.5rem;
+    }
+
+    .mobile{
+        display: block;
+        margin: 0;
+        width: 2rem;
+    }
+    nav ul{
+        display: none;
+        transition: all 5s;
+    }
+    nav ul.responsive{
+        display: block;
+        background-color: var(--white);
+        color: white;
+        position: absolute;
+        left: 0;
+        top: 4rem;
+        width: 100%;
+    }
+    ul.responsive li {
+        display: block;
+        margin: 1rem;
+    }
+
+} */
+
+/* LIGHT ANIMATION */
+  div > span {
+    opacity: 0.15;
+  }
+  #I {
+    opacity: 1;
+    animation: flickerI 2s linear  reverse infinite;
+  }
+  #I::after {
+    content: '';
+    width: 150%;
+    -webkit-box-shadow: -20px 0px 60px 8px rgba(255,255,255,1);
+    -moz-box-shadow: -20px 0px 60px 8px rgba(255,255,255,1);
+    box-shadow: -20px 0px 60px 8px rgba(255,255,255,1);
+  }
+  #L, #G {
+    animation: flickerLG 2s linear reverse infinite;
+    position: relative;
+  }
+  #L::after, 
+  #L::before  {
+    content:' ';
+    width: 100px;
+    height: 100px;
+    background: var(--white);
+    position: absolute;
+    top: -50%;
+    left: 100%;
+    border-radius: 100%;
+    opacity: 0.05;
+    filter: blur(10px);
+  }
+  #L::after {
+    width: 200px;
+    height: 200px;
+    top: -150%;
+    left: -5%;
+    opacity: 0.1;
+    filter: blur(10px);
+  }
+  #H {
+    animation: flickerH 2s linear reverse infinite
+  }
+  
+  #T {
+    animation: flickerH 2s linear reverse infinite
+  }
+  
+  @keyframes flickerI {
+    0% {
+      opacity: 0.4;
+    }
+    5% {
+      opacity: 0.5;
+    }
+    10% {
+      opacity: 0.6;
+    }
+    15% {
+      opacity: 0.85;
+    }
+    25% {
+      opacity: 0.5;
+    }
+    30% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 0.1;
+    }
+    40% {
+      opacity: 0.25;
+    }
+    45% {
+      opacity: 0.5;
+    }
+    60% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.85;
+    }
+    80% {
+      opacity: 0.4;
+    }
+    90% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes flickerLG {
+    0% {
+      opacity: 0.19;
+    }
+    5% {
+      opacity: 0.2;
+    }
+    10% {
+      opacity: 0.25;
+    }
+    15% {
+      opacity: 0.35;
+    }
+    25% {
+      opacity: 0.2;
+    }
+    30% {
+      opacity: 0.4;
+    }
+    35% {
+      opacity: 0.1;
+    }
+    40% {
+      opacity: 0.25;
+    }
+    45% {
+      opacity: 0.2;
+    }
+    60% {
+      opacity: 0.4;
+    }
+    70% {
+      opacity: 0.35;
+    }
+    80% {
+      opacity: 0.4;
+    }
+    90% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 0.4;
+    }
+  }
+  
+  @keyframes flickerH {
+    0% {
+      opacity: 0.15;
+    }
+    5% {
+      opacity: 0.2;
+    }
+    10% {
+      opacity: 0.12;
+    }
+    15% {
+      opacity: 0.2;
+    }
+    25% {
+      opacity: 0.15;
+    }
+    30% {
+      opacity: 0.4;
+    }
+    35% {
+      opacity: 0.05;
+    }
+    40% {
+      opacity: 0.12;
+    }
+    45% {
+      opacity: 0.15;
+    }
+    60% {
+      opacity: 0.3;
+    }
+    70% {
+      opacity: 0.2;
+    }
+    80% {
+      opacity: 0.3;
+    }
+    90% {
+      opacity: 0.18;
+    }
+    100% {
+      opacity: 0.3;
+    }
+  }
+  
+  @keyframes flickerT {
+    0% {
+      opacity: 0.01;
+    }
+    5% {
+      opacity: 0.05;
+    }
+    10% {
+      opacity: 0.03;
+    }
+    15% {
+      opacity: 0.1;
+    }
+    25% {
+      opacity: 0.07;
+    }
+    30% {
+      opacity: 0.1;
+    }
+    35% {
+      opacity: 0.05;
+    }
+    40% {
+      opacity: 0.06;
+    }
+    45% {
+      opacity: 0.1;
+    }
+    60% {
+      opacity: 0.;
+    }
+    70% {
+      opacity: 0.1;
+    }
+    80% {
+      opacity: 0.;
+    }
+    90% {
+      opacity: 0.0;
+    }
+    100% {
+      opacity: 0.1;
+    }
+  }

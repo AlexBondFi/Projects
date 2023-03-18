@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</link>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="myheader">
+      <div class="logo"><h1>ALEX BOND</h1></div>
+      <nav>
+        <button class="mobile">
+          <span class="material-symbols-outlined"> menu</span>
+        </button>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#projectsCont">Projects</a></li>
+          <li><a href="#aboutCont">About</a></li>
+          <li><a href="#skillsCont">Skills</a></li>
+          <li><a href="/s2300120/Portfolio/gallery.html">Gallery</a></li>
+          <li><a href="#contactCont">Contacts</a></li>
+          <li><a href="https://en.bc.fi/">HBC</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero_banner">
+        <!-- ########## ANIMATION ########## -->
+        <div class="welcome">
+          <span id="L">W</span>
+          <span id="I">E</span>
+          <span id="G">L</span>
+          <span id="H">C</span>
+          <span id="H">O</span>
+          <span id="T">M</span>
+          <span id="T">E</span>
+        </div>
+        <!-- ########## ANIMATION ########## -->
+      </section>
+      <div class="container" id="projectsCont">
+        <h3>Projects</h3>
+        <div class="projectsCont">
+          <div class="box">
+            <div class="imgAction">
+              <img src="img/logo1x1.jpeg" alt="proj1" />
+            </div>
+            <h4>Lorem ipsum dolor sit</h4>
+            <p>HTML, CSS, JavaScript</p>
+          </div>
+          <div class="box">
+            <div class="imgAction">
+              <img src="img/logo2x2.jpeg" alt="proj2" />
+            </div>
+            <h4>Lorem ipsum dolor sit</h4>
+            <p>HTML, CSS, JavaScript</p>
+          </div>
+          <div class="box">
+            <div class="imgAction">
+              <img src="img/logo3x3.jpeg" alt="proj3" />
+            </div>
+            <h4>Lorem ipsum dolor sit</h4>
+            <p>HTML, CSS, JavaScript</p>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="aboutCont">
+        <h3>About me</h3>
+        <div class="aboutCont">
+          <section id="aboutText">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+              vero perspiciatis, ducimus officia inventore veniam autem
+              provident nemo necessitatibus aliquid cupiditate harum blanditiis
+              accusantium cumque alias possimus recusandae suscipit quas
+              eligendi aut consequatur ratione. Consequuntur vero voluptate
+              inventore quae. Ea earum provident consequuntur tempora totam
+              deserunt corrupti nam ratione exercitationem, delectus quisquam
+              obcaecati? Labore quasi ex pariatur, ad exercitationem eligendi
+              aut. Corrupti praesentium cumque, voluptatem aliquam amet aut ea
+              aperiam repudiandae quia rerum facere laudantium, soluta aliquid
+              ducimus itaque esse autem, ad necessitatibus vero reprehenderit
+              eveniet velit ut! Non, porro at. Perspiciatis veritatis culpa est
+              tempore perferendis autem illo iste.
+            </p>
+          </section>
+          <section id="aboutPic">
+            <img src="img/man.jpeg" alt="pic1" />
+          </section>
+        </div>
+      </div>
+      <div class="container" id="skillsCont">
+        <h3>Skills</h3>
+        <div class="skillsCont">
+          <div class="skill" id="html5">
+            <i class="fa-brands fa-html5"></i>
+            <label class="labelskill" for="html5bar">HTML5</label>
+            <progress class="skillsBar" id="html5bar" max="100" value="70">
+              70%
+            </progress>
+          </div>
+          <div class="skill" id="css3">
+            <i class="fa-brands fa-css3-alt"></i>
+            <label class="labelskill" for="css3bar">CSS3</label>
+            <progress class="skillsBar" id="css3bar" max="100" value="50">
+              50%
+            </progress>
+          </div>
+          <div class="skill" id="teaching">
+            <i class="fa-solid fa-user-group"></i>
+            <label class="labelskill" for="teachingbar">TEACHING</label>
+            <progress class="skillsBar" id="teachingbar" max="100" value="20">
+              220%
+            </progress>
+          </div>
+          <div class="skill" id="couching">
+            <i class="fa-solid fa-award"></i>
+            <label class="labelskill" for="couchingbar">COUCHING</label>
+            <progress class="skillsBar" id="couchingbar" max="100" value="40">
+              40%
+            </progress>
+          </div>
+        </div>
+      </div>
+      <!-- ####### -->
+      <div class="container" id="contactCont">
+        <section id="contact">
+          <h3>Contact me</h3>
+          <form>
+            <div class="insert">
+              <label for="Your name">Your name</label>
+              <input type="text" id="Your name" name="choice" />
+            </div>
+            <div class="insert">
+              <label for="Your email">Your email</label>
+              <input type="email" id="Your email" name="choice" />
+            </div>
+            <div class="insert">
+              <label for="Message">Message to me</label>
+              <input type="text" id="Message" name="choice" />
+            </div>
+            <div class="submit">
+              <button type="submit">SUBMIT</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <small>My website my rules 2024</small>
+      <button id="toTop" class="btn above">
+        <span class="material-symbols-outlined"> north </span>
+      </button>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarsDatabase</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="form">
+        <form>
+          <h2>Insert car data</h2>
+          <div class="input">
+            <label for="license">License number</label>
+            <input type="text" id="license" required />
+          </div>
+          <div class="input">
+            <label for="maker">Car maker</label>
+            <input type="text" id="maker" required />
+          </div>
+          <div class="input">
+            <label for="model">Car model</label>
+            <input type="text" id="model" required />
+          </div>
+          <div class="input">
+            <label for="owner">Car owner</label>
+            <input type="text" id="owner" required />
+          </div>
+          <div class="input">
+            <label for="price">Car price</label>
+            <input type="text" id="price" required />
+          </div>
+          <div class="input">
+            <label for="color">Car color</label>
+            <input type="text" id="color" required />
+          </div>
+          <div>
+            <button class="inputBTN" id="addCar">Add car</button>
+          </div>
+        </form>
+      </div>
+      <div class="output">
+        <div class="search">
+          <h2>Search car by licence number</h2>
+          <label for="licenseNumber">Enter licence number</label>
+          <input type="text" id="licenseNumber" />
+          <button type="submit" id="searchBtn">Search</button>
+          <p><span id="searchResult"></span></p>
+        </div>
+        <div class="database">
+          <h2>Cars database</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>License</th>
+                <th>Maker</th>
+                <th>Model</th>
+                <th>Owner</th>
+                <th>Price</th>
+                <th>Color</th>
+              </tr>
+            </thead>
+            <tbody id="result"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    padding: 1rem 0;
+}
+
+.form{
+    padding: 2rem;
+    background-color: #63D471;
+}
+
+button{
+    margin: 1rem 0;
+    height: 2rem;
+    width: 5rem;
+    border-style: none;
+    background-color: #5D4E60;
+    color: white;
+}
+
+.output{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    margin: 0.5rem;
+    height: 1.5rem;
+}
+
+.database{
+    padding: 2rem;
+    background-color: #7699D4;
+}
+
+th{
+    padding: 1rem;
+}
+td{
+    padding: 0.5rem;
+}
+
+.search{
+    padding: 2rem;
+    background-color: #69FFF1;
+    height: 20rem;
+}
