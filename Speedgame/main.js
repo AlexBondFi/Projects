@@ -81,10 +81,10 @@ const startGame = () =>{
 
 const endGame = () =>{
     endAudio.play()
-    if (score<10){
+    if (score<=10){
         scoreEnd.textContent = `Your score is: ${score}, try more!`
     }
-    else  if (20>score>10){
+    else  if (20>=score>10){
         scoreEnd.textContent = `Your score is: ${score}, not bad!!`
     } 
     else  if (score>20){
