@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="section1"></section>
+    <section id="section2">
+      <h1>Pizza order</h1>
+      <form>
+        <h2>Your name</h2>
+        <input type="text" placeholder="Print your name here" id="name" />
+        <h2>Pizza size</h2>
+        <div>
+          <input type="radio" name="size" id="size2" />
+          <label for="size2"> For 2 7,50 €</label>
+        </div>
+        <div>
+          <input type="radio" name="size" id="size4" />
+          <label for="size4"> For 4 10,50 €</label>
+        </div>
+        <div></div>
+        <input type="radio" name="size" id="size6" />
+        <label for="size6"> For 6 12,50 €</label>
+        <div>
+          <input type="radio" name="size" id="size8" />
+          <label for="size8"> For 8 15,50 €</label>
+        </div>
+        <h2>Toppings</h2>
+        <div>
+          <input type="checkbox" name="topping" id="Chicken" />
+          <label for="Chicken">Chicken</label>
+        </div>
+        <div>
+          <input type="checkbox" name="topping" id="Ham" />
+          <label for="Ham">Ham</label>
+        </div>
+        <div>
+          <input type="checkbox" name="topping" id="Olives" />
+          <label for="Olives">Olives</label>
+        </div>
+        <div>
+          <input type="checkbox" name="topping" id="Onion" />
+          <label for="Onion">Onion</label>
+        </div>
+        <div>
+          <input type="checkbox" name="topping" id="Cheese" />
+          <label for="Cheese">Cheese</label>
+        </div>
+        <div>
+          <input type="checkbox" name="topping" id="Mushrooms" />
+          <label for="Mushrooms">Mushrooms</label>
+        </div>
+        <div>
+          <input type="checkbox" name="topping" id="Chili" />
+          <label for="Chili">Chili</label>
+        </div>
+        <div>
+          <input type="checkbox" name="topping" id="Shrimps" />
+          <label for="Shrimps">Shrimps</label>
+        </div>
+        <div>
+          <input type="checkbox" name="topping" id="Tuna" />
+          <label for="Tuna">Tuna</label>
+        </div>
+        <div>
+          <input type="checkbox" name="topping" id="Peperoni" />
+          <label for="Peperoni">Peperoni</label>
+        </div>
+        <h2>Delivery method</h2>
+        <div>
+          <select name="delivery" id="delivery">
+            <option selected disabled value="default">Choose from here</option>
+            <option value="inhere">Eat here</option>
+            <option value="takeout">Takeout</option>
+            <option value="home">Home delivery + 5€</option>
+          </select>
+        </div>
+      </form>
+    </section>
+    <section id="section3">
+      <h2>Summary:</h2>
+      <div>
+        <p id="displayName"></p>
+      </div>
+      <div>
+        <p id="selectedSize"></p>
+      </div>
+      <div>
+        <p id="totalToppings"></p>
+      </div>
+      <div>
+        <p id="selectDelivery"></p>
+      </div>
+      <div>
+        <p id="totalPrice"></p>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
