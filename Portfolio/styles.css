@@ -346,7 +346,7 @@ nav ul.responsive{
   background-color: var(--white);
   position: absolute;
   left: 0;
-  top: 4rem;
+  top: 3rem;
   width: 100%;
 }
 ul.responsive li {
@@ -371,6 +371,10 @@ h3 {
 #aboutPic {
     width: 75vw;
 }
+
+.imgAction{
+  filter: none;
+}
     
 .skillsCont{
   flex-direction: column;
@@ -379,6 +383,10 @@ h3 {
    
 #skillsPic {
     width: 75vw;
+  }
+
+  i{
+    filter: none;
   }
 
   #contact{
